@@ -1,69 +1,0 @@
-[14:11:29:404] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证：320829112334566767，姓名：不才陈某，电话：19896327106
-[14:13:15:510] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证：320829112334566767，姓名：不才陈某，电话：19896327106
-[14:17:24:121] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证：320829112334566767，姓名：不***，电话：198*****106
-[14:18:27:741] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：320829112334566767，姓名：不***，电话：198*****106
-[14:20:33:175] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：320829******566767，姓名：不***，电话：198*****106
-[14:22:19:729] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：622426******051172，姓名：不***，电话：198*****106
-[14:22:57:639] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：622426******051172，姓名：张*，电*：188*****460
-[14:26:47:132] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：622426******051172，姓名：张*，电*：188*****460
-[14:28:12:068] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - idCard：622426******25232X，姓名：张*，电*：188*****333
-[14:47:42:294] [INFO] - com.example.fhdemo.logdesensitization.CustomPatternLayout.matchingAndEncrypt(CustomPatternLayout.java:101) - >>> logger 没有匹配到对应的正则表达式 
-[14:47:42:290] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333
-[14:49:02:468] [INFO] - com.example.fhdemo.logdesensitization.CustomPatternLayout.matchingAndEncrypt(CustomPatternLayout.java:101) - >>> logger 没有匹配到对应的正则表达式 
-[14:48:12:098] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333
-[14:49:09:777] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333
-[14:49:26:073] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333
-[14:50:51:947] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[14:53:14:760] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[14:53:14:769] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[14:56:22:882] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[15:02:46:385] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[15:05:22:307] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[15:05:22:314] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:09:15:750] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[16:09:15:756] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参***后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:09:15:757] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:09:56:391] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[16:09:59:186] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参***后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:10:00:333] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:10:08:776] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-[16:10:10:990] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参***后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:10:12:414] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-***
-****
-****
-*[16:16:03:907] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-***
-*[16:16:28:261] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:17:58:682] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333
-***
-*[16:17:58:693] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身**622426******25232X
-[16:17:58:695] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:18:29:765] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身**：622426******25232X，werw：张*，sdfsdgg：188*****333
-***
-*[16:18:29:776] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身**622426******25232X
-[16:18:29:777] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：622426******25232X，werw：张*，sdfsdgg：188*****333,call:0i1CRW2RImoxxcXD166*****98555
-[16:19:05:982] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：62242619991225232X，werw：张三，sdfsdgg：18810963333
-***
-*[16:19:11:506] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证62242619991225232X
-[16:19:11:508] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555
-[16:20:16:316] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[16:20:16:322] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:20:16:324] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[16:20:16:325] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555
-[16:21:36:240] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[16:21:36:247] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:21:36:248] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[16:21:36:249] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555
-[16:21:43:103] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[16:21:43:109] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:21:43:111] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[16:21:43:112] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555
-[16:22:00:722] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[16:22:23:741] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:22:25:463] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[16:22:26:300] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555
-[16:22:39:995] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[16:23:27:120] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[16:23:27:121] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[16:23:27:480] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555

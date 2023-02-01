@@ -1,4 +1,0 @@
-[17:09:21:358] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:13) - 身份证：622426******25232X，werw：张三，sdfsdgg：18810963333
-[17:09:21:549] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:14) - pwd：/vc/teller/v1/login_参数解密后：{"pwd":"111111","accesstoken":"accesstoken","imChannelList":"[\"qq\",\"qq_in\"]","uid":"203_2","baseURL":"http://10.10.80.104:6071","refreshtoken":"token","appKey":"tzb","utype":2,"uType":2}
-[17:09:21:551] [INFO] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:15) - 身份证622426******25232X
-[17:09:21:552] [ERROR] - com.example.logdesensitization.LogDesensitizationTest.testDes(LogDesensitizationTest.java:16) - ree：62242619991225232X，werw：张三，sdfsdgg：18810963333,call:0i1CRW2RImoxxcXD1664259898555

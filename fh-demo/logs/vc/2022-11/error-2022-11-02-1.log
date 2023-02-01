@@ -1,1 +1,0 @@
-[17:12:35:019] [ERROR] - org.springframework.amqp.rabbit.connection.AbstractConnectionFactory$DefaultChannelCloseLogger.log(AbstractConnectionFactory.java:748) - Shutdown Signal: channel error; protocol method: #method<channel.close>(reply-code=404, reply-text=NOT_FOUND - no queue 'startMix' in vhost '/', class-id=60, method-id=70)
