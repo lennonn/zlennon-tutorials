@@ -7,6 +7,9 @@ import com.theokanning.openai.completion.CompletionRequest;
 import com.theokanning.openai.image.CreateImageRequest;
 import com.theokanning.openai.image.Image;
 import com.theokanning.openai.image.ImageResult;
+import com.zlennon.chatgpt.model.ReqResItemsEntity;
+import com.zlennon.chatgpt.repository.ReqResItemsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,6 +22,9 @@ public class CompletionRequestController {
 
     @Value("${token}")
     private String token;
+
+    @Autowired
+    private ReqResItemsRepository reqResItemsRepository;
 
     @GetMapping("/completion")
     public Object completionRequest(@RequestBody  String params) {
@@ -41,6 +47,12 @@ public class CompletionRequestController {
         CreateImageRequest  createImageRequest = JSONObject.parseObject(params, CreateImageRequest.class);
         OpenAiService service = new OpenAiService(token);
         ImageResult imageResult = service.createImage(createImageRequest);
+        ReqResItemsEntity resItemsEntity = new ReqResItemsEntity();
+        resItemsEntity.setApi("/v1/images/generations");
+        resItemsEntity.setReqInfo(JSONObject.parseObject(params).toString());
+        resItemsEntity.setResInfo(JSONObject.toJSONString(imageResult));
+        resItemsEntity.setType(2);
+        reqResItemsRepository.save(resItemsEntity);
         return ResponseEntity.ok(imageResult);
     }
 }
