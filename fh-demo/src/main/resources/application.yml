@@ -1,0 +1,49 @@
+#fileUrl=C:/home/zhanglei/custom.json
+jasypt:
+  encryptor:
+    password: retail_salt
+    algorithm: PBEWithMD5AndTripleDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    druid:
+      db-type: mysql
+    url: jdbc:mysql://10.10.80.130:3306/vc
+    username: root
+    password: ENC(eL9ZLtX9OHztAmzb80e/GA==)
+  rabbitmq:
+    host: 10.10.80.130
+    password: guest
+    port: 5672
+    username: guest
+    virtual-host: /
+    template:
+      reply-timeout: 0
+    listener:
+      simple:
+        acknowledge-mode: auto
+    publisher-confirm-type: correlated
+fileUrl: /home/custom.json
+imAsynSend: false
+server:
+    instance:
+      id: 2
+    port: 8081
+trtc:
+  im:
+    sdkappid: 1400613186
+    identifier: vc_system
+    key: c216293517a8b68541bac528fcefb31be465b6b62ad4d648d270f9848537e864
+    url: https://console.tim.qq.com
+sm2:
+  key:
+    private:
+      path: c:/usr/sm2_key/sm2_private_key.hex
+    public:
+      path: c:/usr/sm2_key/sm2_public_key.hex
+  isEncrypt: 1
+account:
+  failedTimes: 3
+  intervalMinutes: 1
+  lockDuration:

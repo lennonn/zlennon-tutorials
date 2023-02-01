@@ -1,0 +1,37 @@
+#fileUrl=C:/home/zhanglei/custom.json
+spring:
+  rabbitmq:
+    host: 10.10.80.130
+    password: guest
+    port: 5672
+    username: guest
+    virtual-host: /
+    template:
+      reply-timeout: 0
+    listener:
+      simple:
+        acknowledge-mode: auto
+    publisher-confirm-type: correlated
+fileUrl: /home/custom.json
+imAsynSend: true
+server:
+  instance:
+    id: 2
+  port: 8081
+trtc:
+  im:
+    sdkappid: 1400335539
+    identifier: vc_system
+    key: 34eb9700eb29723d11f96f2584ae065a16bfe18ca835995c5dd90033630c8e2b
+    url: https://console.tim.qq.com
+sm2:
+  key:
+    private:
+      path: c:/usr/sm2_key/sm2_private_key.hex
+    public:
+      path: c:/usr/sm2_key/sm2_public_key.hex
+  isEncrypt: 1
+account:
+  failedTimes: 3
+  intervalMinutes: 1
+  lockDuration:
