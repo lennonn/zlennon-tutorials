@@ -2,12 +2,12 @@ package com.zl.tij4.annotations;
 //: annotations/InterfaceExtractorProcessorFactory.java
 // APT-based annotation processing.
 
+import com.sun.mirror.apt.*;
+import com.sun.mirror.declaration.*;
+
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Set;
-
-import com.sun.mirror.apt.*;
-import com.sun.mirror.declaration.*;
 
 public class InterfaceExtractorProcessorFactory
   implements AnnotationProcessorFactory {

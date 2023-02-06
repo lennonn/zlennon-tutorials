@@ -5,9 +5,9 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "req_res_items", schema = "chatgpt", catalog = "")
+@Table(name = "req_res_items", catalog = "")
 public class ReqResItemsEntity {
-    private Integer id;
+    private Integer chatId;
     private String reqInfo;
     private String resInfo;
     private String api;
@@ -16,14 +16,16 @@ public class ReqResItemsEntity {
     @Basic
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
-    public Integer getId() {
-        return id;
+    @Column(name = "chat_id")
+    public Integer getChatId() {
+        return chatId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setChatId(Integer chatId) {
+        this.chatId = chatId;
     }
+
+
 
     @Basic
     @Column(name = "req_info")
@@ -70,11 +72,11 @@ public class ReqResItemsEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         ReqResItemsEntity that = (ReqResItemsEntity) o;
-        return Objects.equals(id, that.id) && Objects.equals(reqInfo, that.reqInfo) && Objects.equals(resInfo, that.resInfo) && Objects.equals(api, that.api) && Objects.equals(type, that.type);
+        return Objects.equals(chatId, that.chatId) && Objects.equals(reqInfo, that.reqInfo) && Objects.equals(resInfo, that.resInfo) && Objects.equals(api, that.api) && Objects.equals(type, that.type);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, reqInfo, resInfo, api, type);
+        return Objects.hash(chatId, reqInfo, resInfo, api, type);
     }
 }

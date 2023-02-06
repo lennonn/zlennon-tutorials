@@ -1,9 +1,8 @@
 package com.zl.tij4.annotations;
 //: annotations/AtUnitExample1.java
 
-import org.junit.Test;
-
 import com.zl.tij4.net.mindview.util.OSExecute;
+import org.junit.jupiter.api.Test;
 
 public class AtUnitExample1 {
   public String methodOne() {
@@ -13,7 +12,7 @@ public class AtUnitExample1 {
     System.out.println("This is methodTwo");
     return 2;
   }
-  @Test 
+  @Test
   boolean methodOneTest() {
     return methodOne().equals("This is methodOne");
   }

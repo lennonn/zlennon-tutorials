@@ -31,14 +31,13 @@ public class CompletionRequestController {
         CompletionRequest completionRequest = JSONObject.parseObject(params, CompletionRequest.class);
         OpenAiService service = new OpenAiService(token);
         System.out.println("\nCreating completion...");
-/*        CompletionRequest completionRequest = CompletionRequest.builder()
-                .model("davinci-search-document")
-                .prompt("地球将要毁灭")
-                .echo(true)
-                .user("testing")
-                .build();*/
-        service.createCompletion(completionRequest).getChoices().forEach(System.out::println);
         List<CompletionChoice> choices = service.createCompletion(completionRequest).getChoices();
+        ReqResItemsEntity resItemsEntity = new ReqResItemsEntity();
+        resItemsEntity.setApi("/v1/completions");
+        resItemsEntity.setReqInfo(JSONObject.parseObject(params).toString());
+        resItemsEntity.setResInfo(JSONObject.toJSONString(choices));
+        resItemsEntity.setType(1);
+        reqResItemsRepository.save(resItemsEntity);
         return ResponseEntity.ok(choices.toArray());
     }
 

@@ -1,12 +1,13 @@
 package com.zl.tij4.annotations;
 //: annotations/AtUnitComposition.java
 // Creating non-embedded tests.
-import org.junit.Test;
 
+import com.zl.tij4.net.mindview.atunit.Test;
 import com.zl.tij4.net.mindview.util.OSExecute;
 public class AtUnitComposition {
   AtUnitExample1 testObject = new AtUnitExample1();
-  @Test boolean _methodOne() {
+  @Test
+  boolean _methodOne() {
     return
       testObject.methodOne().equals("This is methodOne");
   }
