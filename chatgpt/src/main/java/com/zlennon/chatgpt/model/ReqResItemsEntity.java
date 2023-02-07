@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "req_res_items", catalog = "")
+@Table(name = "req_res_items",schema = "chatgpt", catalog = "")
 public class ReqResItemsEntity {
     private Integer chatId;
     private String reqInfo;
@@ -13,7 +13,6 @@ public class ReqResItemsEntity {
     private String api;
     private Integer type;
 
-    @Basic
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "chat_id")
@@ -27,7 +26,6 @@ public class ReqResItemsEntity {
 
 
 
-    @Basic
     @Column(name = "req_info")
     public String getReqInfo() {
         return reqInfo;
@@ -37,7 +35,6 @@ public class ReqResItemsEntity {
         this.reqInfo = reqInfo;
     }
 
-    @Basic
     @Column(name = "res_info")
     public String getResInfo() {
         return resInfo;
@@ -47,7 +44,6 @@ public class ReqResItemsEntity {
         this.resInfo = resInfo;
     }
 
-    @Basic
     @Column(name = "api")
     public String getApi() {
         return api;
@@ -57,7 +53,6 @@ public class ReqResItemsEntity {
         this.api = api;
     }
 
-    @Basic
     @Column(name = "type")
     public Integer getType() {
         return type;

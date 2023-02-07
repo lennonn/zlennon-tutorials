@@ -5,8 +5,10 @@ import cn.hutool.json.JSONUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
-@SpringBootTest
+@SpringBootTest()
+@ActiveProfiles("shardingMarking")
 public class ShardingServiceTest {
 
         @Autowired
@@ -14,12 +16,13 @@ public class ShardingServiceTest {
 
         @Test
        public void  testShardingInsert(){
-                for (int i = 0; i <100;i++){
+                for (int i = 0; i <10;i++){
                     JSONObject obj = new JSONObject();
                     obj.put("data",i);
                     String req = obj.toString();
                     String res = obj.toString();
-                    shardingService.shardingInsert(req,res);
+                    int type = i%2;
+                    shardingService.shardingInsert(req,res,type);
                 }
         }
 }
