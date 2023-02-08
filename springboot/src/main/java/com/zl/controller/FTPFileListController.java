@@ -2,15 +2,14 @@ package com.zl.controller;
 
 import com.zl.dao.mongoDBImpl.FtpAttrStaticImpl;
 import com.zl.entity.DtsFtpFile;
+import com.zl.entity.FileOperater;
 import com.zl.entity.FtpAttr;
 import com.zl.service.AbstractFtpClientOpr;
 import com.zl.service.impl.DownloadFtp;
 import com.zl.service.impl.ListMapFtp;
-import com.zl.entity.FileOperater;
 import org.apache.commons.net.ftp.FTPClient;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;

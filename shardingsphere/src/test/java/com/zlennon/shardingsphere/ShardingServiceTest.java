@@ -16,7 +16,7 @@ public class ShardingServiceTest {
 
         @Test
        public void  testShardingInsert(){
-                for (int i = 0; i <10;i++){
+                for (int i = 0; i <4;i++){
                     JSONObject obj = new JSONObject();
                     obj.put("data",i);
                     String req = obj.toString();
@@ -24,5 +24,9 @@ public class ShardingServiceTest {
                     int type = i%2;
                     shardingService.shardingInsert(req,res,type);
                 }
+        }
+        @Test
+       public void testShardingSearch(){
+            shardingService.shardingSearch();
         }
 }

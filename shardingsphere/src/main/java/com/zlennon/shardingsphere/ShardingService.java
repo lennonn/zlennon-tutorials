@@ -1,5 +1,7 @@
 package com.zlennon.shardingsphere;
 
+import cn.hutool.json.JSONObject;
+import cn.hutool.json.JSONUtil;
 import com.zlennon.chatgpt.model.ReqResItemsEntity;
 import com.zlennon.chatgpt.repository.ReqResItemsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +22,9 @@ public class ShardingService {
         reqResItemsRepository.save(resItemsEntity);
     }
 
-    public void shardingSearch(String req){
-        ReqResItemsEntity resItemsEntity = new ReqResItemsEntity();
-        reqResItemsRepository.save(resItemsEntity);
+    public void shardingSearch(){
+        Iterable<ReqResItemsEntity> all = reqResItemsRepository.findA();
+        all.forEach(r->System.out.println(JSONUtil.toJsonStr(r)));
     }
 
 }

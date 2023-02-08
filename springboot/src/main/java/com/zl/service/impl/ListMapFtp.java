@@ -1,13 +1,12 @@
 package com.zl.service.impl;
 
 import com.zl.entity.DtsFtpFile;
+import com.zl.entity.FileOperater;
 import com.zl.entity.FtpAttr;
 import com.zl.service.AbstractFtpClientOpr;
-import com.zl.entity.FileOperater;
 import org.apache.commons.net.ftp.FTPFile;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
-import org.springframework.stereotype.Component;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -35,7 +34,7 @@ public class ListMapFtp extends AbstractFtpClientOpr {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         List<DtsFtpFile> listFile = new ArrayList<DtsFtpFile>();
         List<DtsFtpFile> listDirectory = new ArrayList<DtsFtpFile>();
-        listMap= new List<List<DtsFtpFile>>();
+        listMap= new ArrayList<List<DtsFtpFile>>();
         try {
             FTPFile[] fs = ftpClient.listFiles();
             for (FTPFile ftpFile : fs) {

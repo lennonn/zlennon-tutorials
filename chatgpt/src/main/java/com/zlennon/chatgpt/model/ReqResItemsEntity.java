@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
-@Table(name = "req_res_items",schema = "chatgpt", catalog = "")
+@Table(name = "req_res_items", catalog = "")
 public class ReqResItemsEntity {
     private Integer chatId;
     private String reqInfo;
