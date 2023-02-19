@@ -1,16 +1,2 @@
 server:
   port: 7100
-spirng:
-  application:
-    name: chatgpt-feign-client
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      discovery:
-        instance-id: ${spring.application.name}-${server.port}
-        service-name: ${spring.application.name}
-        register: false
-        health-check-url: /actuator/health
-        heartbeat:
-          enabled: true  

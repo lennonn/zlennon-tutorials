@@ -1,6 +1,4 @@
 spring:
-  application:
-    name: chatgpt-service
   cloud:
     consul:
       host: localhost

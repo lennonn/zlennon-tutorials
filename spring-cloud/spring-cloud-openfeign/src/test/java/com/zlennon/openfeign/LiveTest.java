@@ -17,6 +17,6 @@ public class LiveTest {
         Assert.assertEquals(HttpStatus.OK.value(), response.getStatusCode());
         Assert.assertNotNull(response.getBody());
         final ReqResItemsEntity result = response.as(ReqResItemsEntity.class);
-        Assert.assertEquals(new Long(1), result.getChatId());
+        Assert.assertEquals(new Long(5), result.getChatId());
     }
 }
