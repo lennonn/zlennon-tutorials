@@ -1,0 +1,42 @@
+filtered:
+  topic:
+    name: filtered
+greeting:
+  topic:
+    name: greeting
+kafka:
+  backoff:
+    interval: 9000
+    max_failure: 5
+long:
+  message:
+    topic:
+      name: longMessage
+message:
+  topic:
+    name: baeldung
+monitor:
+  consumer:
+    simulate: true
+  kafka:
+    bootstrap:
+      config: localhost:9092
+    consumer:
+      groupid: baeldungGrp
+      groupid.simulate: baeldungGrpSimulate
+  producer:
+    simulate: true
+  topic:
+    name: baeldung
+multi:
+  type:
+    topic:
+      name: multitype
+partitioned:
+  topic:
+    name: partitioned
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+test:
+  topic: testtopic1
