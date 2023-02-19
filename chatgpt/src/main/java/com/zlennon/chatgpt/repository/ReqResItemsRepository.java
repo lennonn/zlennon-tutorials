@@ -12,4 +12,7 @@ public interface ReqResItemsRepository   extends CrudRepository<ReqResItemsEntit
 
     @Query(value = "SELECT * FROM req_res_items",nativeQuery=true)
     List<ReqResItemsEntity> findA();
+
+    @Query(value = "SELECT * FROM req_res_items where chat_id= ?1",nativeQuery=true)
+    ReqResItemsEntity getChatGPTById(Long id);
 }

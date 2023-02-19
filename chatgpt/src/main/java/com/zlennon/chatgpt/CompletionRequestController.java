@@ -9,6 +9,7 @@ import com.theokanning.openai.image.Image;
 import com.theokanning.openai.image.ImageResult;
 import com.zlennon.chatgpt.model.ReqResItemsEntity;
 import com.zlennon.chatgpt.repository.ReqResItemsRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/chatgpt")
+@Slf4j
 public class CompletionRequestController {
 
     @Value("${token}")
@@ -26,11 +28,11 @@ public class CompletionRequestController {
     @Autowired
     private ReqResItemsRepository reqResItemsRepository;
 
-    @GetMapping("/completion")
+    @RequestMapping("/completion")
     public Object completionRequest(@RequestBody  String params) {
         CompletionRequest completionRequest = JSONObject.parseObject(params, CompletionRequest.class);
         OpenAiService service = new OpenAiService(token);
-        System.out.println("\nCreating completion...");
+        log.info("Creating completion...");
         List<CompletionChoice> choices = service.createCompletion(completionRequest).getChoices();
         ReqResItemsEntity resItemsEntity = new ReqResItemsEntity();
         resItemsEntity.setApi("/v1/completions");
@@ -38,6 +40,7 @@ public class CompletionRequestController {
         resItemsEntity.setResInfo(JSONObject.toJSONString(choices));
         resItemsEntity.setType(1);
         reqResItemsRepository.save(resItemsEntity);
+        log.info("save resItemsEntity finished...");
         return ResponseEntity.ok(choices.toArray());
     }
 
@@ -53,5 +56,10 @@ public class CompletionRequestController {
         resItemsEntity.setType(2);
         reqResItemsRepository.save(resItemsEntity);
         return ResponseEntity.ok(imageResult);
+    }
+
+    @RequestMapping("/getChatGPTById/{chatId}")
+    public Object getChatGPTById (@PathVariable("chatId") Long id){
+      return   reqResItemsRepository.getChatGPTById(id);
     }
 }
