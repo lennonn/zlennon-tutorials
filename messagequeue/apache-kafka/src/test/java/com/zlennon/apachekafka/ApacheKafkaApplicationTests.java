@@ -5,6 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 @SpringBootTest
 class ApacheKafkaApplicationTests {
 
@@ -12,8 +14,14 @@ class ApacheKafkaApplicationTests {
     MessageService messageService;
 
     @Test
-    void testMessageServcie() throws InterruptedException {
+    void testMessageService(){
+        assertNotNull(messageService);
         messageService.execute();
     }
 
+    @Test
+    void testMultiTypeMessage()  {
+        assertNotNull(messageService);
+        messageService.multiTypeExecute();
+    }
 }
