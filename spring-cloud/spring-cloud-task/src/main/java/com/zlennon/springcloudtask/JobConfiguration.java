@@ -34,15 +34,9 @@ public class JobConfiguration {
     @Bean
     public Step step1() {
         return this.stepBuilderFactory.get("job1step1")
-                .tasklet(new Tasklet() {
-                    @Override
-                    public RepeatStatus execute(
-                            StepContribution contribution,
-                            ChunkContext chunkContext)
-                            throws Exception {
-                        LOGGER.info("Tasklet has run");
-                        return RepeatStatus.FINISHED;
-                    }
+                .tasklet((contribution, chunkContext) -> {
+                    LOGGER.info("Tasklet has run");
+                    return RepeatStatus.FINISHED;
                 }).build();
     }
 
@@ -55,23 +49,14 @@ public class JobConfiguration {
                         new ListItemReader<>(Arrays.asList("7",
                                 "2", "3", "10", "5", "6")))
                 .processor(
-                        new ItemProcessor<String, String>() {
-                            @Override
-                            public String process(String item)
-                                    throws Exception {
-                                LOGGER.info("Processing of chunks");
-                                return String.valueOf(Integer
-                                        .parseInt(item) * -1);
-                            }
+                        (ItemProcessor<String, String>) item -> {
+                            LOGGER.info("Processing of chunks");
+                            return String.valueOf(Integer
+                                    .parseInt(item) * -1);
                         })
-                .writer(new ItemWriter<String>() {
-                    @Override
-                    public void write(
-                            List<? extends String> items)
-                            throws Exception {
-                        for (String item : items) {
-                            LOGGER.info(">> " + item);
-                        }
+                .writer(items -> {
+                    for (String item : items) {
+                        LOGGER.info(">> " + item);
                     }
                 }).build();
     }
@@ -88,16 +73,10 @@ public class JobConfiguration {
     public Job job2() {
         return jobBuilderFactory.get("job2")
                 .start(stepBuilderFactory.get("job2step1")
-                        .tasklet(new Tasklet() {
-                            @Override
-                            public RepeatStatus execute(
-                                    StepContribution contribution,
-                                    ChunkContext chunkContext)
-                                    throws Exception {
-                                LOGGER
-                                        .info("This job is from zlennon");
-                                return RepeatStatus.FINISHED;
-                            }
+                        .tasklet((contribution, chunkContext) -> {
+                            LOGGER
+                                    .info("This job is from zlennon");
+                            return RepeatStatus.FINISHED;
                         })
                         .build())
                 .build();
