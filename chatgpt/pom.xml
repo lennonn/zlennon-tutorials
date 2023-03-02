@@ -8,7 +8,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.zlennon</groupId>
+	<packaging>pom</packaging>
 	<artifactId>chatgpt</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>chatgpt</name>
@@ -113,15 +113,11 @@
 			<groupId>com.chatgpt</groupId>
 			<artifactId>client</artifactId>
 			<version>0.9.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/lib/client-0.9.0.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.chatgpt</groupId>
 			<artifactId>api</artifactId>
 			<version>0.9.0</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/main/resources/lib/api-0.9.0.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
