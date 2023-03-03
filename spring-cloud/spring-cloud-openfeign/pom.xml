@@ -8,7 +8,6 @@
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.zlennon</groupId>
     <artifactId>spring-cloud-openfeign</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-openfeign</name>

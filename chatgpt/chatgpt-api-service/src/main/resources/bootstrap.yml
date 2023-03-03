@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: chatgpt-service
-  cloud:
-    consul:
-      host: localhost
-      port: 8500
-      config:
-        enabled: false

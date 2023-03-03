@@ -1,9 +1,8 @@
 package com.zlennon.shardingsphere;
 
-import cn.hutool.json.JSONObject;
 import cn.hutool.json.JSONUtil;
-import com.zlennon.chatgpt.model.ReqResItemsEntity;
-import com.zlennon.chatgpt.repository.ReqResItemsRepository;
+import com.zlennon.chatgptapiservice.model.ReqResItemsEntity;
+import com.zlennon.chatgptapiservice.repository.ReqResItemsRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

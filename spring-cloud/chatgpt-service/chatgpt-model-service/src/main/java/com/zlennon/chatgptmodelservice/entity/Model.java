@@ -1,0 +1,26 @@
+package com.zlennon.chatgptmodelservice.entity;
+
+import lombok.Data;
+
+import javax.persistence.*;
+import java.io.Serializable;
+import java.util.List;
+
+@Table(name = "model")
+@Entity
+@Data
+public class Model implements Serializable {
+    @Id
+    public String id;
+    public String object;
+    public String ownedBy;
+    @OneToMany(mappedBy ="model",cascade={CascadeType.PERSIST})
+    public List<Permission> permission;
+    public String root;
+    public String parent;
+
+    public Model() {
+    }
+
+
+}
