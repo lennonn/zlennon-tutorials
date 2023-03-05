@@ -46,7 +46,7 @@ class KafkaStreamsApplicationLiveTest {
     private final BlockingQueue<String> output = new LinkedBlockingQueue<>();
 
     @Container
-    private static final KafkaContainer KAFKA = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:6.1.9"));
+    private static final KafkaContainer KAFKA = new KafkaContainer(DockerImageName.parse("confluentinc/cp-kafka:7.3.2"));
 
     @TempDir
     private static File tempDir;
@@ -114,7 +114,7 @@ class KafkaStreamsApplicationLiveTest {
         Map<String, Object> props = new HashMap<>();
         props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, KAFKA.getBootstrapServers());
         props.put(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
-        props.put(ConsumerConfig.GROUP_ID_CONFIG, "baeldung");
+        props.put(ConsumerConfig.GROUP_ID_CONFIG, "zlennon");
         props.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
         props.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, LongDeserializer.class);
 
