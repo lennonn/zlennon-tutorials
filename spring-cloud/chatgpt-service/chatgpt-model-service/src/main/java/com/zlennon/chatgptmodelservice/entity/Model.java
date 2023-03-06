@@ -14,7 +14,7 @@ public class Model implements Serializable {
     public String id;
     public String object;
     public String ownedBy;
-    @OneToMany(mappedBy ="model",cascade={CascadeType.PERSIST})
+    @OneToMany(mappedBy ="model",cascade = CascadeType.REMOVE)
     public List<Permission> permission;
     public String root;
     public String parent;

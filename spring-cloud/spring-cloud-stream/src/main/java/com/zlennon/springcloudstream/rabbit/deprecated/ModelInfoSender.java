@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.integration.support.MessageBuilder;
 
-@EnableBinding(value ={SinkSender.class})
+//@EnableBinding(value ={SinkSender.class})
 public class ModelInfoSender {
     private static Logger logger = LoggerFactory.getLogger(ModelInfoSender.class);
 
-    @Autowired
+   // @Autowired
     private SinkSender sinkSender;
 
     public void send() {

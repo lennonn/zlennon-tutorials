@@ -1,3 +1,7 @@
 spring:
   application:
     name: cloud-stream-service
+  profiles:
+    active: rabbitNewWay
+server:
+  port: 7777
