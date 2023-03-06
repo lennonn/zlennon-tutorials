@@ -16,7 +16,7 @@ public class SendMessageController {
 
     @RequestMapping("/send")
     public void send(String message) {
-        streamBridge.send("sendModelId-out-0", message);
+        streamBridge.send("modelId-in-0", message);
         log.info("消息发送成功：{}",message);
     }
 

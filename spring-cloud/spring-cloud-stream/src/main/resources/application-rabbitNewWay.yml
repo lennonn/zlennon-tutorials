@@ -1,13 +1,15 @@
 spring:
   rabbitmq:
-    host: 10.10.80.104
+    host: localhost
     port: 5672
     username: guest
     password: guest
   cloud:
     stream:
       bindings:
-        sendModelId-out-0:
-          destination: get-model-info
+        modelId-out-0:
+          destination: model-id
+        model-in-0:
+          destination: model
       function:
-        definition: sendModelId
+        definition: modelId;model

@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 public class SenderSupplier {
 
     @Bean
-    public Supplier<String> sendModelId(){
+    public Supplier<String> modelId(){
         return ()->"modelId";
     }
 }
