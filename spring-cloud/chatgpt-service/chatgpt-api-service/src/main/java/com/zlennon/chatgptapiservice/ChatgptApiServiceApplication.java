@@ -6,7 +6,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication(scanBasePackages = "com.zlennon.**")
-//@EnableDiscoveryClient
+@EnableDiscoveryClient
 public class ChatgptApiServiceApplication {
 
 	public static void main(String[] args) {

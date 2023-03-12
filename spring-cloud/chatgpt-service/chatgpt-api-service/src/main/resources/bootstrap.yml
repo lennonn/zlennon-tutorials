@@ -3,7 +3,9 @@ spring:
     name: chatgpt-api-service
   cloud:
     consul:
-      host: localhost
+      host: 101.43.146.222
       port: 8500
       config:
         enabled: false
+  zipkin:
+    baseUrl: http://101.43.146.222:9411/

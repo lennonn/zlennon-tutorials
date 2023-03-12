@@ -1,6 +1,6 @@
 package com.zlennon.openfeign;
 
-import com.zlennon.chatgpt.ReqResItemsEntity;
+import com.zlennon.commonentity.ReqResItemsEntity;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.junit.Assert;

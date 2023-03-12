@@ -59,6 +59,7 @@ public class CompletionRequestController {
 
     @RequestMapping("/getChatGPTById/{chatId}")
     public Object getChatGPTById (@PathVariable("chatId") Long id){
+        log.info("getChatGPTById id:{} ...",id);
       return   reqResItemsRepository.getChatGPTById(id);
     }
 

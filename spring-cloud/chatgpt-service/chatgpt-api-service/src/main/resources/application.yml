@@ -12,13 +12,13 @@ spring:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   cloud:
     consul:
-      host: localhost
+      host: 101.43.146.222
       port: 8500
       discovery:
         enabled: true
         register: true
         instance-id: ${spring.application.name}-${server.port}
-        service-name: chatgpt-service
+        service-name: chatgpt-api-service
         health-check-path: /actuator/health
         health-check-interval: 30s
 server:
