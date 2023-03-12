@@ -1,6 +1,6 @@
 package com.zlennon.openfeign.controller;
 
-import com.zlennon.chatgpt.ReqResItemsEntity;
+import com.zlennon.commonentity.ReqResItemsEntity;
 import com.zlennon.openfeign.client.ChatGPTClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -36,7 +36,7 @@ public class ModelIdConsumer {
 
     @Bean
     public Supplier<Model> model(){
-        return ()->{ log.info("model Supplier ");
+        return ()->{ //log.info("model Supplier ");
            return  new Model();
         } ;
     }

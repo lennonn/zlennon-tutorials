@@ -1,6 +1,6 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: 101.43.146.222
     port: 5672
     username: guest
     password: guest
@@ -13,3 +13,5 @@ spring:
           destination: model
       function:
         definition: modelId;model
+  zipkin:
+    baseUrl: http://101.43.146.222:9411/

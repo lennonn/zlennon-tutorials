@@ -1,7 +1,7 @@
 package com.zlennon.openfeign.client;
 
 
-import com.zlennon.chatgpt.ReqResItemsEntity;
+import com.zlennon.commonentity.ReqResItemsEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.PathVariable;

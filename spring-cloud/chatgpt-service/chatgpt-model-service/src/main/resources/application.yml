@@ -11,7 +11,7 @@ spring:
       ddl-auto: update
       show-sql: false
   rabbitmq:
-    host: localhost
+    host: 101.43.146.222
     port: 5672
     username: guest
     password: guest
@@ -23,5 +23,8 @@ spring:
         destination: model
       function:
         definition: modelId;model
+  zipkin:
+    baseUrl: http://101.43.146.222:9411/
+
 server:
   port: 7888
